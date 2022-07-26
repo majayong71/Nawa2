@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
@@ -19,7 +20,6 @@
   </script>
 </head>
 <body> <!-- 홈페이지 기본 레이아웃 max width 80 % -->
-
 <header>
   <div class="fullLayOut">
     <nav class="navbar">
@@ -106,8 +106,8 @@
 
   <div class="first__area">
     <div class="contant__ranking__box">   <%-- DB에서 담아오는 이미지를 넣는 container --%>
-      <img class="card__img1" src="img0">
-      <img class="card__img1" src="DBimg">   <%--model Test line--%>
+      <img class="card__img1" src=${img0}>
+      <img class="card__img1" src=${img0}>   <%--model Test line--%>
 
 
       <div class="ranking">
@@ -115,7 +115,7 @@
       </div>
       <div class="card__text">
         <h4>
-          텍스트 영역<br>
+          ${textcode}<br>
         </h4>
         <p>텍스트 영역</p>
       </div>

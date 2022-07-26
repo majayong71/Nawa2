@@ -8,6 +8,7 @@ class Nawa2ApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
