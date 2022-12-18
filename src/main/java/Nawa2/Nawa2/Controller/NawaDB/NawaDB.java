@@ -1,3 +1,55 @@
+package Nawa2.Nawa2.Controller.NawaDB;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.sql.*;
+
+
+
+public class NawaDB {
+
+    private int count;
+    private String placeType;
+    private int created;
+    private String timeType;
+    private String img_source;
+
+    public int getCount() {
+        return count;
+    }
+    public String getplaceType() {
+        return placeType;
+    }
+
+    public int getCreated () {
+        return created;
+    }
+
+    public String gettimeType() {
+        return timeType;
+    }
+
+    public String getimg_source () {
+        return img_source;
+    }
+
+    @Override
+    public String toString () {
+        return "nawaDB [count=" + count +",placeType=" + placeType
+                + ",created=" + created + ",timeType=" + timeType
+                + ",img_source=" + img_source
+                +"]";
+    }
+
+}
+
+
+
+
+
 //package Nawa2.Nawa2.Controller;
 //import org.springframework.ui.Model;
 //import org.springframework.web.bind.annotation.RequestMapping;

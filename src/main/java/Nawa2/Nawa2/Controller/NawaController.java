@@ -22,6 +22,20 @@ public class NawaController {
         return "/index";
     }
 
+
+//    @GetMapping("/index")
+//    public String nawaWelcomePage2 (Model model){
+//
+//        model.addAttribute("textcode","테스트코드!");
+//        System.out.println(model);
+//
+//        return "/index";
+//    }
+    // ※ {GET [/index]: 이미 'nawaController' bean 메서드가 있습니다. 라는 내용의 오류가 발생됐었다.
+    // Nawa2.Nawa2.Controller.NawaController#nawaWelcomePage2(Model)
+    //to {GET [/index]}: There is already
+
+
     @RequestMapping(value = "/welcomepage2",method = RequestMethod.GET)
     public String nawaWelcomePagetwo (Model model) {
 
